@@ -1,0 +1,158 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/bg.png") center/cover no-repeat;
+}
+
+#modal {
+  width: 80vw;
+  height: 80vh;
+  padding: 0;
+  display: inline-flex;
+  border-radius: 15px;
+}
+#modal .modal-window__form {
+  width: 50%;
+  padding: 3%;
+  display: grid;
+  align-items: center;
+}
+#modal .modal-window__form .modal-form__logo {
+  width: 100%;
+}
+#modal .modal-window__form .modal-form__name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0095da;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0 auto;
+}
+#modal .modal-form__wrapper .modal-form__form-item_icon {
+  display: grid;
+  align-content: center;
+  border-bottom: solid 2px #7fcaec;
+}
+#modal .modal-form__wrapper .modal-form__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 2px #7fcaec;
+  border-radius: initial;
+  height: 80px;
+  font-size: 30px;
+  margin: 0;
+}
+#modal .modal-form__wrapper .modal-form__form-item-pswrd-help {
+  position: absolute;
+  text-align: right;
+  color: #0095da;
+  right: 0;
+  bottom: -25px;
+}
+#modal .modal-window__login-button {
+  width: 100%;
+  height: 70px;
+  background-color: #0095da;
+  font-size: 30px;
+  border-color: unset;
+  margin-top: 10px;
+}
+#modal .modal-form__separator-line {
+  display: block;
+  width: 100%;
+  height: 40px;
+  top: 20px;
+  position: relative;
+  border-top: 2px solid #7fcaec;
+}
+#modal .modal-form__separator-line .modal-form__separator {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  margin: 0 auto;
+  display: block;
+  top: -13px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#modal .modal-form__social-buttons_container {
+  display: flex;
+  justify-content: space-between;
+}
+#modal .modal-form__social-buttons_container .social-buttons__facebook {
+  width: 49%;
+  height: 70px;
+  background-color: #4267b2;
+  font-size: 24px;
+  border-color: unset;
+}
+#modal .modal-form__social-buttons_container .social-buttons__google {
+  width: 49%;
+  height: 70px;
+  background-color: #d34836;
+  font-size: 24px;
+  border-color: unset;
+}
+#modal .modal-window__sign-up_container .sign-up__text {
+  margin: 0 auto;
+}
+#modal .modal-window__image-container {
+  width: 50%;
+  height: 100%;
+}
+#modal .modal-window__image-container .modal-window__image {
+  width: 100%;
+  height: 100%;
+  background: url("../img/Layer1.png") center/cover no-repeat;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #modal .modal-window__form {
+    width: 60%;
+  }
+  #modal .modal-window__image-container {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #modal {
+    height: 85vh;
+  }
+  #modal .modal-window__form {
+    width: 60%;
+  }
+  #modal .modal-form__wrapper > .modal-form__input {
+    height: 30px;
+  }
+  #modal .modal-window__image-container {
+    width: 40% !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #modal {
+    width: 85vw;
+    height: 85vh;
+  }
+  #modal .modal-window__form {
+    width: 100%;
+  }
+  #modal .modal-form__wrapper > .modal-form__form-item > .modal-form__input {
+    height: 40px;
+    font-size: 20px;
+  }
+  #modal .modal-window__image-container {
+    display: none !important;
+  }
+  #modal .modal-form__social-buttons_container > .social-buttons__google, #modal .social-buttons__facebook {
+    font-size: 20px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
